@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Combinações</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Calculadora de Combinações</h1>
+        <p>Calcule o número de combinações de n elementos tomados p a p</p>
+    </header>
+
+    <section class="calculator">
+        <div>
+            <label for="n">Número total de elementos (n):</label>
+            <input type="number" id="n" min="1" placeholder="Digite o valor de n">
+        </div>
+        
+        <div>
+            <label for="p">Número de elementos a serem escolhidos (p):</label>
+            <input type="number" id="p" min="1" placeholder="Digite o valor de p">
+        </div>
+
+        <button onclick="calcularCombinacoes()">Calcular Cominação</button>
+
+        <div class="resultado">
+            <h3>Resultado:</h3>
+            <p id="resultado"></p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Calculadora de Combinações - Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
